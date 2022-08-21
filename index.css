@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* 16px *62.5 =10px = 1rem*/
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(120, 0, 153, 0.418);
+}
+.mainHead{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.mainBox {
+    width: 50rem;
+    height: 50rem;
+    background-color: #5c057e77;
+    border-radius: 1.5rem;
+}
+.mainBox ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mainBox ul li{
+    margin: 2rem 0;
+    background-color: rgba(158, 4, 201, 0.589);
+}
+.guessBox{
+    width: 40rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+.guessBox input{
+    margin: 1.5rem 0;
+    width: 90%;
+    height: 4rem;
+}
+.button{
+    padding: .5rem 2rem;
+    cursor: pointer;
+}
+.head{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+.scoreBox{
+    width: 40rem;
+    height: 10rem;
+    border-radius: 2rem;
+}
+
+.resultBox {
+    width: 40rem;
+    height: 10rem;
+    border-radius: 2rem;
+}
+.rules{
+    margin: 0rem 19rem;
+}
+
+#result, #scoree {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media(max-width:650px) {
+    .mainBox {
+        width: 32rem;
+    }
+
+    .resultBox,.scoreBox,.guessBox {
+        width: 30rem;
+    }
+    .guessBox input{
+        width: 80%;
+    }
+
+}
